@@ -1,0 +1,17 @@
+#background-card {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  background-color: rgb(172, 172, 172);
+  text-align: center;
+}
+
+#profile-picture {
+  display: block;
+  width: 20%;
+  height: 20%;
+
+  margin: 5% auto;
+}
