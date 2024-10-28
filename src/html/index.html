@@ -4,6 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andy's Personal Website</title>
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="background-card">
+      <div id="background-card-content">
+        <div class="background-card-content">
+          <img
+            id="profile-picture"
+            src="../../imgs/pages/ProfilePicture.png"
+            alt="Andy's picture"
+          />
+        </div>
+        <div class="background-card-content">
+          <h1>My name is Andy Bae!</h1>
+          <p>
+            I'm a second year undergraduate student studying Computer Science at
+            SFU.
+          </p>
+          <p>
+            In my free time, I love to play basketball, workout at the gym, and
+            play with my dogs.
+          </p>
+        </div>
+        <div id="nav" class="background-card-content">
+          <button
+            onclick="window.location.href='./about.html'"
+            class="nav-links"
+          >
+            About Me
+          </button>
+          <button
+            onclick="window.location.href='./projects.html'"
+            class="nav-links"
+          >
+            Projects
+          </button>
+          <button
+            onclick="window.location.href='./experience.html'"
+            class="nav-links"
+          >
+            Experiences
+          </button>
+        </div>
+        <div class="background-card-content">
+          <div class="professional-social-media-links">
+            <a href="https://www.linkedin.com/in/andy-bae-6668bb2b9/"
+              ><img
+                id="linkedIn-logo"
+                class="logo"
+                src="../../imgs/pages/LinkedIn-Logos/LI-In-Bug.png"
+                alt="LinkedIn Logo"
+            /></a>
+          </div>
+          <div class="professional-social-media-links">
+            <a href="https://github.com/Andy-J-B"
+              ><img
+                id="github-logo"
+                class="logo"
+                src="../../imgs/pages/github-mark/github-mark.png"
+                alt="GitHub Logo"
+            /></a>
+          </div>
+          <div class="professional-social-media-links">
+            <button
+              type="submit"
+              onclick="window.open('../../docs/Resume.pdf')"
+              id="resume-link"
+            >
+              Download Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
