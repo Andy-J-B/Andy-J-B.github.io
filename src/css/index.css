@@ -1,0 +1,65 @@
+#background-card {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  background-color: rgb(172, 172, 172);
+  text-align: center;
+}
+
+.background-card-content {
+  margin: 5% auto;
+}
+
+#background-card-content {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+#profile-picture {
+  display: block;
+  width: 20%;
+  height: 20%;
+
+  margin: 5% auto;
+}
+
+.logo {
+  width: 25px;
+  filter: grayscale(100%);
+}
+
+.nav-links {
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  background-color: black;
+  width: 15vh;
+  height: 70%;
+}
+
+#nav {
+  height: 10%;
+}
+
+.professional-social-media-links {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#resume-link {
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  background-color: black;
+  width: fit-content;
+  height: fit-content;
+}
