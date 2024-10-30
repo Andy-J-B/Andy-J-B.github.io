@@ -1,19 +1,38 @@
-/* .background-card-content {
-  height: inherit;
-  display: flex;
-  flex-direction: column;
+.background-card-content {
 }
 
 #background-card-top {
-  height: 80%;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  min-height: fit-content;
+}
+
+#background-card-top-left {
+  width: 30%;
+
+  align-self: center;
+}
+
+#background-card-top-right {
+  width: 30%;
+  align-self: center;
+}
+
+#background-card-top-middle {
+  align-self: flex-end;
+  margin: 2% 0px;
 }
 
 #background-card-bottom {
-  height: 20%;
-} */
+}
 
 #experience-picture {
-  width: 1%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 10%;
+  border-radius: 10%;
 }
 
 .button {
