@@ -1,0 +1,50 @@
+.background-card-content {
+}
+
+#background-card-top {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  min-height: fit-content;
+}
+
+#background-card-top-left {
+  width: 30%;
+
+  align-self: center;
+}
+
+#background-card-top-right {
+  width: 30%;
+  align-self: center;
+}
+
+#background-card-top-middle {
+  align-self: flex-end;
+  margin: 2% 0px;
+}
+
+#background-card-bottom {
+}
+
+#project-picture {
+  width: 300px;
+  height: 200px;
+  object-fit: fill;
+  object-position: 0 10%;
+  border-radius: 10%;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(172, 172, 172);
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 50px;
+  font-weight: 300;
+  margin: 1px 1px;
+  border-radius: 100%;
+}

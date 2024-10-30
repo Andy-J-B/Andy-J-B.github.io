@@ -35,62 +35,68 @@ projects = {
 
 var id = 0;
 
-document.getElementById("project-name").innerHTML =
-  experiences[0]["project_name"];
+document.getElementById("project-name").innerHTML = projects[0]["project_name"];
 document.getElementById("project-classification").innerHTML =
-  experiences[0]["project_classification"];
-document.getElementById("project-date").innerHTML = experiences[0]["date"];
+  projects[0]["project_classification"];
+document.getElementById("project-date").innerHTML = projects[0]["date"];
 document.getElementById("project-languages-used").innerHTML =
-  experiences[0]["languages_used"];
-document.getElementById("experience-about").innerHTML = experiences[0]["about"];
+  projects[0]["languages_used"];
+document.getElementById("project-about").innerHTML = projects[0]["about"];
 document.getElementById(
   "project-picture"
-).src = `../../imgs/pages/experience/experience-${id}.jpg`;
+).src = `../../imgs/pages/projects/project-${id}.png`;
 
-function changeExperienceRight() {
+function changeProjectRight() {
   id += 1;
 
-  if (checkIDRight() == false) {
-    return;
-  }
-
+  checkIDRight();
+  document.getElementById("project-name").innerHTML =
+    projects[id]["project_name"];
+  document.getElementById("project-classification").innerHTML =
+    projects[id]["project_classification"];
+  document.getElementById("project-date").innerHTML = projects[0]["date"];
+  document.getElementById("project-languages-used").innerHTML =
+    projects[id]["languages_used"];
+  document.getElementById("project-about").innerHTML = projects[id]["about"];
+  document.getElementById(
+    "project-picture"
+  ).src = `../../imgs/pages/projects/project-${id}.png`;
   return;
 }
 
 function checkIDRight() {
-  if (Object.keys(experiences).length == id) {
-    id -= 1;
+  if (Object.keys(projects).length == id) {
+    id = 0;
     return false;
   } else {
     return true;
   }
 }
 
-function changeExperienceLeft() {
+function changeProjectLeft() {
   id -= 1;
 
-  if (checkIDLeft() == false) {
-    return;
-  }
+  checkIDLeft();
 
   document.getElementById("project-name").innerHTML =
-    experiences[id]["project_name"];
+    projects[id]["project_name"];
   document.getElementById("project-classification").innerHTML =
-    experiences[id]["project_classification"];
-  document.getElementById("project-date").innerHTML = experiences[0]["date"];
+    projects[id]["project_classification"];
+  document.getElementById("project-date").innerHTML = projects[0]["date"];
   document.getElementById("project-languages-used").innerHTML =
-    experiences[id]["languages_used"];
-  document.getElementById("project-about").innerHTML = experiences[id]["about"];
+    projects[id]["languages_used"];
+  document.getElementById("project-about").innerHTML = projects[id]["about"];
   document.getElementById(
     "project-picture"
-  ).src = `../../imgs/pages/projects/project-${id}.jpg`;
+  ).src = `../../imgs/pages/projects/project-${id}.png`;
 
   return;
 }
 
 function checkIDLeft() {
-  if (Object.keys(experiences).length == -1) {
-    id += 1;
+  if (id < 0) {
+    id = Object.keys(projects).length - 1;
+
     return false;
   } else {
     return true;

@@ -78,8 +78,8 @@ function changeExperienceLeft() {
 }
 
 function checkIDLeft() {
-  if (Object.keys(experiences).length == -1) {
-    id += 1;
+  if (id == -1) {
+    id = Object.keys(experiences).length - 1;
     return false;
   } else {
     return true;
