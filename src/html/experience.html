@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/experience.css" />
   </head>
   <body>
     <div id="navbar-top">
@@ -38,12 +39,22 @@
     </div>
     <div id="background-card">
       <div id="background-card-top" class="background-card-content">
-        <img id="experience-picture" src="" />
-        <h1 id="experience-title"></h1>
-        <h4 id="experience-job-title"></h4>
-        <h4 id="experience-date"></h4>
-        <p id="languages-used"></p>
-        <div id="experience-about"></div>
+        <div id="background-card-top-left">
+          <button class="button" onclick="changeExperienceLeft()"><</button>
+
+          <img />
+        </div>
+        <div id="background-card-top-middle">
+          <img id="experience-picture" src="" />
+          <h1 id="experience-title"></h1>
+          <h4 id="experience-job-title"></h4>
+          <h4 id="experience-date"></h4>
+          <p id="experience-languages-used"></p>
+          <div id="experience-about"></div>
+        </div>
+        <div id="background-card-top-right">
+          <button class="button" onclick="changeExperienceRight()">></button>
+        </div>
       </div>
       <div id="background-card-bottom" class="background-card-content">
         <div class="professional-social-media-links">
