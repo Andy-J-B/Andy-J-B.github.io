@@ -63,3 +63,8 @@
   width: fit-content;
   height: fit-content;
 }
+
+#about-button {
+  color: black;
+  background-color: white;
+}

@@ -48,3 +48,8 @@
   margin: 1px 1px;
   border-radius: 100%;
 }
+
+#experience-button {
+  color: black;
+  background-color: white;
+}

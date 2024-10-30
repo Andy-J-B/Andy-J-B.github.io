@@ -38,6 +38,15 @@
   min-width: fit-content;
 }
 
+.navbar-top-button {
+  transition-duration: 0.4s;
+}
+
+.navbar-top-button:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+
 #profile-picture {
   height: 100px;
 }

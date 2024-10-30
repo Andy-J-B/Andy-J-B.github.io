@@ -29,3 +29,8 @@
 h5 {
   font-weight: normal;
 }
+
+#about-button {
+  color: black;
+  background-color: white;
+}
