@@ -3,6 +3,21 @@
   margin: 0;
 }
 
+#background-image {
+  position: absolute;
+  background-image: url("../../imgs/pages/background.jpg");
+
+  /* Add the blur effect */
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+
+  /* Full height */
+  height: 100vh;
+  width: 100%;
+
+  z-index: -10;
+}
+
 #navbar-top {
   width: 90%;
   height: 30%;
@@ -53,7 +68,7 @@
 
 #background-card {
   margin: 5% 5%;
-  background-color: rgb(172, 172, 172);
+  background-color: rgba(172, 172, 172);
   text-align: center;
   height: 60vh;
   display: flex;
