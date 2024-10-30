@@ -40,6 +40,7 @@
   height: 60vh;
   display: flex;
   flex-direction: column;
+  min-height: fit-content;
 }
 
 .professional-social-media-links {
