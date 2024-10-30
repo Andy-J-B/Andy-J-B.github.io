@@ -64,11 +64,6 @@
   height: fit-content;
 }
 
-#about-button {
-  color: black;
-  background-color: white;
-}
-
 #background-image {
   position: relative;
   background-image: url("../../imgs/pages/background.jpg");

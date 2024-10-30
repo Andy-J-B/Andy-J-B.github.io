@@ -48,6 +48,14 @@
   margin: 1px 1px;
   border-radius: 100%;
 }
+#project-link {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
 
 #projects-button {
   color: black;

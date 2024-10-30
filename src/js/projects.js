@@ -2,6 +2,7 @@ projects = {
   0: {
     project_name: "Faster Than Light Yagami",
     project_classification: "Fall Hacks Project First Place",
+    project_link: "https://github.com/Andy-J-B/FallHacks2024",
     date: "September 2024",
     languages_used: "Godot",
     about:
@@ -10,6 +11,7 @@ projects = {
   1: {
     project_name: "Bank Management System",
     project_classification: "Personal Project",
+    project_link: "https://github.com/Andy-J-B/BankManagementSystem",
     date: "June 2024",
     languages_used: "C++, SQLite",
     about:
@@ -18,6 +20,7 @@ projects = {
   2: {
     project_name: "Net Worth Calculator Web Application",
     project_classification: "Personal Project",
+    project_link: "https://github.com/Andy-J-B/PERN_NetworthCalculator",
     date: "February 2024",
     languages_used: "Javascript, React, Postgresql, Express, Node, HTML, CSS",
     about:
@@ -26,6 +29,7 @@ projects = {
   3: {
     project_name: "Quant Regression Based Trading Algorithm",
     project_classification: "Group Project",
+    project_link: "",
     date: "June 2023-May 2024",
     languages_used: "Python",
     about:
@@ -35,13 +39,17 @@ projects = {
 
 var id = 0;
 
-document.getElementById("project-name").innerHTML = projects[0]["project_name"];
+document.getElementById("project-name").innerHTML =
+  projects[id]["project_name"];
 document.getElementById("project-classification").innerHTML =
-  projects[0]["project_classification"];
-document.getElementById("project-date").innerHTML = projects[0]["date"];
+  projects[id]["project_classification"];
+document.getElementById(
+  "project-link"
+).href = `${projects[id]["project_link"]}`;
+document.getElementById("project-date").innerHTML = projects[id]["date"];
 document.getElementById("project-languages-used").innerHTML =
-  projects[0]["languages_used"];
-document.getElementById("project-about").innerHTML = projects[0]["about"];
+  projects[id]["languages_used"];
+document.getElementById("project-about").innerHTML = projects[id]["about"];
 document.getElementById(
   "project-picture"
 ).src = `../../imgs/pages/projects/project-${id}.png`;
@@ -54,7 +62,10 @@ function changeProjectRight() {
     projects[id]["project_name"];
   document.getElementById("project-classification").innerHTML =
     projects[id]["project_classification"];
-  document.getElementById("project-date").innerHTML = projects[0]["date"];
+  document.getElementById(
+    "project-link"
+  ).href = `${projects[id]["project_link"]}`;
+  document.getElementById("project-date").innerHTML = projects[id]["date"];
   document.getElementById("project-languages-used").innerHTML =
     projects[id]["languages_used"];
   document.getElementById("project-about").innerHTML = projects[id]["about"];
@@ -82,7 +93,10 @@ function changeProjectLeft() {
     projects[id]["project_name"];
   document.getElementById("project-classification").innerHTML =
     projects[id]["project_classification"];
-  document.getElementById("project-date").innerHTML = projects[0]["date"];
+  document.getElementById(
+    "project-link"
+  ).href = `${projects[id]["project_link"]}`;
+  document.getElementById("project-date").innerHTML = projects[id]["date"];
   document.getElementById("project-languages-used").innerHTML =
     projects[id]["languages_used"];
   document.getElementById("project-about").innerHTML = projects[id]["about"];
