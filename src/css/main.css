@@ -18,6 +18,15 @@
   vertical-align: middle;
 }
 
+#navbar-profile {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
 .navbar-top-button {
   border-radius: 20px;
   text-decoration: none;
