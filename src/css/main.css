@@ -33,24 +33,13 @@
   height: 100px;
 }
 
-.background-card-content {
-  margin: 5% auto;
-}
-
 #background-card {
-  position: inherit;
   margin: 5% 5%;
   background-color: rgb(172, 172, 172);
   text-align: center;
   height: 60vh;
-}
-
-#background-card-top {
   display: flex;
-}
-
-.background-card-top-content {
-  flex: auto;
+  flex-direction: column;
 }
 
 .professional-social-media-links {
