@@ -4,8 +4,9 @@
 }
 
 #navbar-top {
-  width: 100%;
+  width: 90%;
   height: 30%;
+  margin: 0 5%;
   background-color: rgb(172, 172, 172);
   display: flex;
   align-items: center;
@@ -30,4 +31,33 @@
 
 #profile-picture {
   height: 100px;
+}
+
+#background-card {
+  margin: 5% 5%;
+  background-color: rgb(172, 172, 172);
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.professional-social-media-links {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#resume-link {
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  background-color: black;
+  width: fit-content;
+  height: fit-content;
+}
+
+.logo {
+  width: 25px;
+  filter: grayscale(100%);
 }
