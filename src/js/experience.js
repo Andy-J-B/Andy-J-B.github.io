@@ -11,13 +11,15 @@ experiences = {
 
 var id = 0;
 
-document.getElementById("experience-title").innerHTML = experiences[0]["title"];
+document.getElementById("experience-title").innerHTML =
+  experiences[id]["title"];
 document.getElementById("experience-job-title").innerHTML =
-  experiences[0]["job_title"];
-document.getElementById("experience-date").innerHTML = experiences[0]["date"];
+  experiences[id]["job_title"];
+document.getElementById("experience-date").innerHTML = experiences[id]["date"];
 document.getElementById("experience-languages-used").innerHTML =
-  experiences[0]["languages_used"];
-document.getElementById("experience-about").innerHTML = experiences[0]["about"];
+  experiences[id]["languages_used"];
+document.getElementById("experience-about").innerHTML =
+  experiences[id]["about"];
 document.getElementById(
   "experience-picture"
 ).src = `../../imgs/pages/experience/experience-${id}.jpg`;
@@ -25,9 +27,7 @@ document.getElementById(
 function changeExperienceRight() {
   id += 1;
 
-  if (checkIDRight() == false) {
-    return;
-  }
+  checkIDRight();
 
   document.getElementById("experience-title").innerHTML =
     experiences[id]["title"];
@@ -47,7 +47,7 @@ function changeExperienceRight() {
 
 function checkIDRight() {
   if (Object.keys(experiences).length == id) {
-    id -= 1;
+    id = 0;
     return false;
   } else {
     return true;
@@ -57,9 +57,7 @@ function checkIDRight() {
 function changeExperienceLeft() {
   id -= 1;
 
-  if (checkIDLeft() == false) {
-    return;
-  }
+  checkIDLeft();
 
   document.getElementById("experience-title").innerHTML =
     experiences[id]["title"];
@@ -78,7 +76,7 @@ function changeExperienceLeft() {
 }
 
 function checkIDLeft() {
-  if (id == -1) {
+  if (id < 0) {
     id = Object.keys(experiences).length - 1;
     return false;
   } else {
