@@ -1,5 +1,14 @@
 projects = {
   0: {
+    project_name: "ClearWrite",
+    project_classification: "CMPT 276 Group Project",
+    project_link: "https://github.com/Andy-J-B/ClearWrite",
+    date: "September-December 2024",
+    languages_used: "React, Node, Vite, Express, Javascript, CSS, html",
+    about:
+      "Collaborated with a team of 4 and developed a speed typing game in Godot with immersive music and sound effects. Integrated Godot api to implement a fully functioning leaderboard, enhancing user competition and engagement. Awarded the First Place Prize by the Computer Science Student Society out of 40 participating groups as it recognized this project for its creativity and engagement.",
+  },
+  1: {
     project_name: "Faster Than Light Yagami",
     project_classification: "Fall Hacks Project First Place",
     project_link: "https://github.com/Andy-J-B/FallHacks2024",
@@ -8,7 +17,7 @@ projects = {
     about:
       "Collaborated with a team of 4 and developed a speed typing game in Godot with immersive music and sound effects. Integrated Godot api to implement a fully functioning leaderboard, enhancing user competition and engagement. Awarded the First Place Prize by the Computer Science Student Society out of 40 participating groups as it recognized this project for its creativity and engagement.",
   },
-  1: {
+  2: {
     project_name: "Bank Management System",
     project_classification: "Personal Project",
     project_link: "https://github.com/Andy-J-B/BankManagementSystem",
@@ -17,7 +26,7 @@ projects = {
     about:
       "Developed a C++ based banking system with SQLite as its database, featuring transaction tracking and an undo function. Designed to manage user bank accounts, balances, and transactions with an intuitive interface. Implemented undo feature by implementing a stack data structure to reverse transactions, enhancing user control.",
   },
-  2: {
+  3: {
     project_name: "Net Worth Calculator Web Application",
     project_classification: "Personal Project",
     project_link: "https://github.com/Andy-J-B/PERN_NetworthCalculator",
@@ -26,7 +35,7 @@ projects = {
     about:
       "Developed a web application to calculate and track net worth, using PostgreSQL, Express.js, and Node.js for the backend and React as the frontend. Built RESTful APIs to handle CRUD operations, ensuring smooth data flow. Enabled users to calculate their current net worth and analyse historical trends for financial insights.",
   },
-  3: {
+  4: {
     project_name: "Quant Regression Based Trading Algorithm",
     project_classification: "Group Project",
     project_link: "",
