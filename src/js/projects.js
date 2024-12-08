@@ -2,7 +2,7 @@ projects = {
   0: {
     project_name: "ClearWrite",
     project_classification: "CMPT 276 Group Project",
-    project_link: "https://github.com/Andy-J-B/ClearWrite",
+    project_link: "https://clearwrite.netlify.app/",
     date: "September-December 2024",
     languages_used: "React, Node, Vite, Express, Javascript, CSS, html",
     about:
