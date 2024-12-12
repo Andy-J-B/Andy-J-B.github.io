@@ -53,3 +53,9 @@
   color: black;
   background-color: white;
 }
+
+#background-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

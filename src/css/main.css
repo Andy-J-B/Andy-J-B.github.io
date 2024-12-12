@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
 }
 
 #background-image {
@@ -21,18 +23,22 @@
 #navbar-top {
   width: 100%;
   height: 30%;
-  background-color: rgb(172, 172, 172);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
 }
 .navbar-top-content {
+  background-color: #333;
   margin: 0 40px;
   display: inline-block;
   vertical-align: middle;
 }
 
 #navbar-profile {
+  background-color: #333;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -63,6 +69,7 @@
 
 #profile-picture {
   height: 100px;
+  background-color: #333;
 }
 
 #background-card {
@@ -78,19 +85,31 @@
 .professional-social-media-links {
   display: inline-block;
   vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-#resume-link {
-  border-radius: 20px;
-  text-decoration: none;
-  color: white;
-  margin: 10px;
-  background-color: black;
-  width: fit-content;
-  height: fit-content;
+.professional-social-media-links a,
+.professional-social-media-links button {
+  margin: 0 10px;
 }
 
 .logo {
-  width: 25px;
-  filter: grayscale(100%);
+  width: 40px;
+  height: 40px;
+}
+
+#resume-link {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resume-link:hover {
+  background-color: #0056b3;
 }
