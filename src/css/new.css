@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(10, 10, 10);
+  color: #fff;
+}
+
+#left-main-container {
+  width: 24vw;
+  padding: 4vh 3vw;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background: var(--background-image) center center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+#right-main-container {
+  width: 70%;
+}
+
+body {
+  display: flex;
+}
+
+#profile-picture {
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 5px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+#name {
+  font-size: 24px;
+}
