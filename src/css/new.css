@@ -41,5 +41,25 @@ body {
 }
 
 #name {
+  margin: 10px 2px;
   font-size: 24px;
+  text-align: left;
+}
+
+#name a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#about {
+  font-size: 18px;
+  text-align: left;
+}
+
+#about span img {
+  width: 16px;
+}
+
+.filter-white {
+  filter: invert(100%);
 }
