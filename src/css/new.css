@@ -55,11 +55,14 @@ body {
   font-size: 18px;
   text-align: left;
 }
+#about span {
+  margin: 1vh 0px;
+}
 
 #about span img {
   width: 16px;
 }
 
 .filter-white {
-  filter: invert(100%);
+  color: white;
 }
