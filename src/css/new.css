@@ -1,7 +1,7 @@
 :root {
   --background-image: linear-gradient(
       90deg,
-      rgba(10, 10, 10, 0),
+      rgba(90, 90, 90, 0.1),
       rgb(10, 10, 10, 1)
     ),
     url("../../imgs/pages/new/about.jpg");
@@ -67,12 +67,22 @@ body {
   font-size: 18px;
   text-align: left;
 }
+
 #about span {
   margin: 1vh 0px;
 }
 
 #about span img {
-  width: 16px;
+  width: 20px;
+  vertical-align: middle;
+
+  background-color: transparent;
+}
+
+#about ion-icon {
+  width: 18px;
+  vertical-align: middle;
+  background-color: transparent;
 }
 
 .filter-white {
