@@ -78,3 +78,39 @@ body {
 .filter-white {
   color: white;
 }
+
+.socials {
+  color: #fff;
+  text-decoration: none;
+  margin: 3vh 0px !important;
+  background-color: transparent;
+}
+
+.socials span {
+  display: inline-block !important;
+  margin-right: 2vw !important;
+  font-weight: normal !important;
+}
+
+.logo {
+  color: white;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+#resume-link {
+  display: inline-block;
+  outline: 0;
+  border: 1px solid white;
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 5px 6px;
+  line-height: 1;
+  transition: transform 200ms, background 200ms;
+}
+
+.socials span:hover {
+  transform: translateY(-1px);
+}
