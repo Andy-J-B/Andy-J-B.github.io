@@ -6,7 +6,7 @@ projects = {
     date: "September-December 2024",
     languages_used: "React, Node, Vite, Express, Javascript, CSS, html",
     about:
-      "Collaborated with a team of 4 and developed a speed typing game in Godot with immersive music and sound effects. Integrated Godot api to implement a fully functioning leaderboard, enhancing user competition and engagement. Awarded the First Place Prize by the Computer Science Student Society out of 40 participating groups as it recognized this project for its creativity and engagement.",
+      "<strong>ClearWrite Highlights:</strong><br>  • Collaborated with a team of 4 to develop a <b>speed typing game</b> in Godot with immersive music and sound effects.<br>  • Integrated the <b>Godot API</b> to implement a fully functioning <b>leaderboard</b>, enhancing user competition and engagement.<br>  • Awarded <b>First Place</b> by the Computer Science Student Society among 40 participating groups, recognized for creativity and engagement.",
   },
   1: {
     project_name: "Faster Than Light Yagami",
@@ -46,15 +46,50 @@ projects = {
   },
 };
 
-var rightMainContainer = document.getElementById("right-main-container");
+var projectsContainer = document.getElementById("projects-container");
 
 var toAdd = document.createDocumentFragment();
 for (var i = 0; i < 5; i++) {
-  var newDiv = document.createElement("div");
-  newDiv.id = "r" + i;
-  newDiv.className = "ansbox";
-  newDiv.textContent = "Hello";
-  toAdd.appendChild(newDiv);
+  var newProject = document.createElement("a");
+  newProject.href = projects[i]["project_link"];
+  newProject.id = i;
+  newProject.className = "projects";
+  //   newProject.textContent = "Hello";
+
+  // Add children
+  var project_name = document.createElement("h3");
+  project_name.textContent = projects[i]["project_name"];
+  project_name.id = i + "project_name";
+
+  var project_classification = document.createElement("h5");
+  project_classification.textContent = projects[i]["project_classification"];
+  project_classification.id = i + "project_classification";
+  project_classification.className = "project_classification";
+
+  var languages_used = document.createElement("h5");
+  languages_used.textContent = projects[i]["languages_used"];
+  languages_used.id = i + "languages_used";
+  languages_used.className = "languages_used";
+
+  var about = document.createElement("p");
+  about.textContent = projects[i]["about"];
+  about.id = i + "about";
+  about.className = "hide";
+
+  newProject.appendChild(project_name);
+  newProject.appendChild(project_classification);
+  newProject.appendChild(languages_used);
+  newProject.appendChild(about);
+
+  toAdd.appendChild(newProject);
 }
 
-rightMainContainer.appendChild(toAdd);
+projectsContainer.appendChild(toAdd);
+{
+  /* <a href="project_link">
+        <h3>project_name</h3>
+        <h5>project_classification</h5>
+        <h5>languages_used</h5>
+        <p>about</p>
+      </a> */
+}
