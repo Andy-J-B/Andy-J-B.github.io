@@ -3,82 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andy's Personal Website</title>
-    <link rel="stylesheet" href="./src/css/index.css" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./src/css/new.css" />
     <link rel="icon" type="image/png" href="./imgs/pages/favicon.png" />
+    
   </head>
   <body>
-    <!-- <img id="background-image" src="./imgs/pages/background.png" /> -->
-    <div id="background-card">
-      <div id="background-card-content">
-        <div class="background-card-content">
-          <img
-            id="profile-picture"
-            src="./imgs/pages/ProfilePicture.png"
-            alt="Andy's picture"
-          />
-        </div>
-        <div class="background-card-content">
-          <h1>My name is Andy Bae!</h1>
-          <p>
-            I'm a second year undergraduate student studying Computer Science at
-            SFU.
-          </p>
-          <p>
-            In my free time, I love to play basketball, workout at the gym, and
-            play with my dogs.
-          </p>
-        </div>
-        <div id="nav" class="background-card-content">
-          <button
-            onclick="window.location.href='./src/html/about.html'"
-            class="nav-links"
+    <div class="main-containers" id="left-main-container">
+       <img
+        id="profile-picture"
+        src="./imgs/pages/ProfilePicture.png"
+        alt="Andy's picture"
+      />
+      <div id="name" >
+        <span style="display: block; background-color: transparent">Andy Junhyuk Bae</span>
+        <a style="background-color: transparent" href="https://github.com/Andy-J-B">@Andy-J-B</a>
+      </div>
+      <div id="about" style="background-color: transparent">
+        <span style="display: block; background-color: transparent"
+          ><img src="./imgs/pages/github-mark/github-mark-white.svg"></img>&nbsp;
+          <a style="background-color: transparent" href="https://github.com/Andy-J-B"
+            >https://github.com/Andy-J-B</a
+          ></span
+        >
+        <span style="display: block; background-color: transparent"><ion-icon name="earth-sharp"></ion-icon>&nbsp;&nbsp;Coquitlam, British Columbia</span>
+        <span style="display: block; background-color: transparent"><ion-icon name="briefcase-sharp"></ion-icon>&nbsp;&nbsp;Available for hire</span>
+        <div class="socials">
+          <span style="display: block"
+            ><a href="https://www.linkedin.com/in/andy-bae-6668bb2b9/"
+            ><img
+              id="linkedIn-logo"
+              class="logo"
+              src="./imgs/pages/LinkedIn-Logos/LI-In-Bug.png"
+              alt="LinkedIn Logo"
+          /></a></span>
+          <span style="display: block"
+            ><a href="https://github.com/Andy-J-B"
+            ><img
+              id="github-logo"
+              class="logo"
+              src="./imgs/pages/github-mark/github-mark-white.svg"
+              alt="GitHub Logo"
+          /></a></span>
+          <span style="display: block"
+            ><button
+            type="submit"
+            onclick="window.open('./docs/Resume.pdf')"
+            id="resume-link"
           >
-            About Me
-          </button>
-          <button
-            onclick="window.location.href='./src/html/projects.html'"
-            class="nav-links"
-          >
-            Projects
-          </button>
-          <button
-            onclick="window.location.href='./src/html/experience.html'"
-            class="nav-links"
-          >
-            Experiences
-          </button>
-        </div>
-        <div class="background-card-content">
-          <div class="professional-social-media-links">
-            <a href="https://www.linkedin.com/in/andy-bae-6668bb2b9/"
-              ><img
-                id="linkedIn-logo"
-                class="logo"
-                src="./imgs/pages/LinkedIn-Logos/LI-In-Bug.png"
-                alt="LinkedIn Logo"
-            /></a>
-          </div>
-          <div class="professional-social-media-links">
-            <a href="https://github.com/Andy-J-B"
-              ><img
-                id="github-logo"
-                class="logo"
-                src="./imgs/pages/github-mark/github-mark.png"
-                alt="GitHub Logo"
-            /></a>
-          </div>
-          <div class="professional-social-media-links">
-            <button
-              type="submit"
-              onclick="window.open('./docs/Resume.pdf')"
-              id="resume-link"
-            >
-              Download Resume
-            </button>
-          </div>
+            Download Resume
+          </button></span>
+
+          
         </div>
       </div>
     </div>
+
+    <div class="main-containers" id="right-main-container">
+      <h1 id="projects-title"class="section-titles">Projects</h1>
+      <div class="projects-container" id="projects-container">
+        
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./src/js/new.js" type="text/javascript"></script>
+
   </body>
 </html>
+
