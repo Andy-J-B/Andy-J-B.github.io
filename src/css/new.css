@@ -72,7 +72,7 @@ body {
 /* Container for all project cards */
 .projects-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap; /* Wrap cards to the next line if needed */
   justify-content: center;
   gap: 20px; /* Spacing between cards */

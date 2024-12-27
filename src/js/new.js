@@ -77,7 +77,7 @@ projects = {
 var projectsContainer = document.getElementById("projects-container");
 
 var toAdd = document.createDocumentFragment();
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 6; i++) {
   var newProject = document.createElement("a");
   newProject.href = projects[i]["project_link"];
   newProject.id = i;
