@@ -25,6 +25,18 @@ projects = {
     ],
   },
   2: {
+    project_name: "Hydrowave Android ecommerce application",
+    project_classification: "Freelance project",
+    project_link: "https://github.com/Andy-J-B/hydrowave",
+    date: "September 2024",
+    languages_used: "React Native, Expo, Webview",
+    about: [
+      "Collaborated with a small company through the prototyping life cycle to ensure all requirements were met, resulting in a fully functional app deployed on the Google Play Store.",
+      "Independently designed and developed the app, showcasing the product, introducing the company, and embedding the Shopify store via WebView.",
+      "Focused on front-end development, ensuring smooth navigation and responsiveness across mobile devices.",
+    ],
+  },
+  3: {
     project_name: "Bank Management System",
     project_classification: "Personal Project",
     project_link: "https://github.com/Andy-J-B/BankManagementSystem",
@@ -36,7 +48,7 @@ projects = {
       "Implemented undo feature by using a stack data structure to reverse transactions, enhancing user control.",
     ],
   },
-  3: {
+  4: {
     project_name: "Net Worth Calculator Web Application",
     project_classification: "Personal Project",
     project_link: "https://github.com/Andy-J-B/PERN_NetworthCalculator",
@@ -48,7 +60,7 @@ projects = {
       "Enabled users to calculate their current net worth and analyze historical trends for financial insights.",
     ],
   },
-  4: {
+  5: {
     project_name: "Quant Regression Based Trading Algorithm",
     project_classification: "Group Project",
     project_link: "",
