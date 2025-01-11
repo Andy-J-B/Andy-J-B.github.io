@@ -3,73 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Page</title>
-    <link rel="stylesheet" href="../css/new.css" />
-    <link rel="icon" type="image/png" href="./imgs/pages/favicon.png" />
-    
+    <title>Landing Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0d0d0d;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      .sidebar {
+        width: 60px;
+        background-color: #1a1a1a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+      }
+
+      .sidebar img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+      }
+
+      .sidebar a {
+        text-decoration: none;
+        color: white;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin: 15px 0;
+        font-size: 14px;
+      }
+
+      .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .content .text-section {
+        max-width: 600px;
+        text-align: center;
+      }
+
+      .content .text-section h1 {
+        font-size: 3em;
+        font-weight: bold;
+      }
+
+      .content .text-section h1 span {
+        color: #00ff88;
+      }
+
+      .content .text-section h2 {
+        font-size: 1.5em;
+        color: #00ff88;
+        margin: 10px 0;
+      }
+
+      .content .text-section p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 20px 0;
+        color: #cccccc;
+      }
+
+      .content .text-section button {
+        background-color: #00ff88;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #0d0d0d;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .content .resume {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .content .resume button {
+        background-color: transparent;
+        border: 2px solid #00ff88;
+        color: #00ff88;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .background-pattern {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(#262626 1px, transparent 1px);
+        background-size: 20px 20px;
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body>
-    <div class="main-containers" id="left-main-container">
-       <img
-        id="profile-picture"
-        src="../../imgs/pages/ProfilePicture.png"
-        alt="Andy's picture"
-      />
-      <div id="name" >
-        <span style="display: block; background-color: transparent">Andy Junhyuk Bae</span>
-        <a style="background-color: transparent" href="https://github.com/Andy-J-B">@Andy-J-B</a>
+    <div class="container">
+      <div class="sidebar">
+        <img src="https://via.placeholder.com/40" alt="Logo" />
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Exp.</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div id="about" style="background-color: transparent">
-        <span style="display: block; background-color: transparent"
-          ><img src="../../imgs/pages/github-mark/github-mark-white.svg"></img>&nbsp;
-          <a style="background-color: transparent" href="https://github.com/Andy-J-B"
-            >https://github.com/Andy-J-B</a
-          ></span
-        >
-        <span style="display: block; background-color: transparent"><ion-icon name="earth-sharp"></ion-icon>&nbsp;&nbsp;Coquitlam, British Columbia</span>
-        <span style="display: block; background-color: transparent"><ion-icon name="briefcase-sharp"></ion-icon>&nbsp;&nbsp;Available for hire</span>
-        <div class="socials">
-          <span style="display: block"
-            ><a href="https://www.linkedin.com/in/andy-bae-6668bb2b9/"
-            ><img
-              id="linkedIn-logo"
-              class="logo"
-              src="../../imgs/pages/LinkedIn-Logos/LI-In-Bug.png"
-              alt="LinkedIn Logo"
-          /></a></span>
-          <span style="display: block"
-            ><a href="https://github.com/Andy-J-B"
-            ><img
-              id="github-logo"
-              class="logo"
-              src="../../imgs/pages/github-mark/github-mark-white.svg"
-              alt="GitHub Logo"
-          /></a></span>
-          <span style="display: block"
-            ><button
-            type="submit"
-            onclick="window.open('../../docs/Resume.pdf')"
-            id="resume-link"
-          >
-            Download Resume
-          </button></span>
-
-          
+      <div class="content">
+        <div class="text-section">
+          <h1>Hey, I'm <span>Bob.</span></h1>
+          <h2>I'm a Full Stack Developer</h2>
+          <p>
+            I've spent the last 5 years building and scaling software for some
+            pretty cool companies. I also teach people to paint online (in case
+            you've got an empty canvas layin' around 🎨). Let's connect!
+          </p>
+          <button>Contact me</button>
         </div>
+        <div class="resume">
+          <button>My resume</button>
+        </div>
+        <div class="background-pattern"></div>
       </div>
     </div>
-
-    <div class="main-containers" id="right-main-container">
-      <h1 id="projects-title"class="section-titles">Projects</h1>
-      <div class="projects-container" id="projects-container">
-        
-      </div>
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../js/new.js" type="text/javascript"></script>
-
   </body>
 </html>
-
